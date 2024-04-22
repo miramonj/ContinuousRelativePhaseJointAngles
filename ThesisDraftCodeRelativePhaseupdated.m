@@ -330,61 +330,61 @@ saveas(gcf, 'CRP_shoulder_hip.png'); % or choose your preferred file format and 
 disp('Figure saved successfully!');
 
 
-% % %% Calculate Discrete Variables for Analyses
-% % % Intralimb Coordination
-% % % Wrist to Elbow
-% % RMSWristToElbow = rms(RelPhAngWristToElbow);
-% % MinWristToElbow = min(RelPhAngWristToElbow);
-% % MaxWristToElbow = max(RelPhAngWristToElbow);
-% % % Elbow to Shoulder
-% % RMSElbowToShoulder = rms(RelPhAngElbowToShoulder);
-% % MinElbowToShoulder = min(RelPhAngElbowToShoulder);
-% % MaxElbowToShoulder = max(RelPhAngElbowToShoulder);
-% % % Shoulder to Trunk
-% % RMSShoulderToTrunk = rms(RelPhAngShoulderToTrunk);
-% % MinShoulderToTrunk = min(RelPhAngShoulderToTrunk);
-% % MaxShoulderToTrunk = max(RelPhAngShoulderToTrunk);
-% % % Hip to Trunk
-% % RMSHipToTrunk = rms(RelPhAngHipToTrunk);
-% % MinHipToTrunk = min(RelPhAngHipToTrunk);
-% % MaxHipToTrunk = max(RelPhAngHipToTrunk);
-% % % Hip to Trunk Frontal Plane
-% % RMSHipToTrunkFront = rms(RelPhAngHipToTrunkFront);
-% % MinHipToTrunkFront = min(RelPhAngHipToTrunkFront);
-% % MaxHipToTrunkFront = max(RelPhAngHipToTrunkFront);
-% % % Knee to Hip
-% % RMSKneeToHip = rms(RelPhAngKneeToHip);
-% % MinKneeToHip = min(RelPhAngKneeToHip);
-% % MaxKneeToHip = max(RelPhAngKneeToHip);
-% % % Knee to Hip Frontal Plane
-% % RMSKneeToHipFront = rms(RelPhAngKneeToHipFront);
-% % MinKneeToHipFront = min(RelPhAngKneeToHipFront);
-% % MaxKneeToHipFront = max(RelPhAngKneeToHipFront);
-% % % Ankle to Knee
-% % RMSAnkleToKnee = rms(RelPhAngAnkleToKnee);
-% % MinAnkleToKnee = min(RelPhAngAnkleToKnee);
-% % MaxAnkleToKnee = max(RelPhAngAnkleToKnee);
-% % %Interlimb Coordination
-% % % Wrist to Ankle
-% % RMSWristToAnkle = rms(RelPhAngWristToAnkle);
-% % MinWristToAnkle = min(RelPhAngWristToAnkle);
-% % MaxWristToAnkle = max(RelPhAngWristToAnkle);
-% % % Elbow to Knee
-% % RMSElbowToKnee = rms(RelPhAngElbowToKnee);
-% % MinElbowToKnee = min(RelPhAngElbowToKnee);
-% % MaxElbowToKnee = max(RelPhAngElbowToKnee);
-% % % Shoulder to Hip
-% % RMSShoulderToHip = rms(RelPhAngShoulderToHip);
-% % MinShoulderToHip = min(RelPhAngShoulderToHip);
-% % MaxShoulderToHip = max(RelPhAngShoulderToHip);
-% % %% Output Table and File
-% % OutputTable = table(RMSWristToElbow,MinWristToElbow,MaxWristToElbow,RMSElbowToShoulder,MinElbowToShoulder,MaxElbowToShoulder,RMSShoulderToTrunk,MinShoulderToTrunk,MaxShoulderToTrunk,RMSHipToTrunk,MinHipToTrunk,MaxHipToTrunk,...
-% %     RMSHipToTrunkFront,MinHipToTrunkFront,MaxHipToTrunkFront,RMSKneeToHip,MinKneeToHip,MaxKneeToHip,RMSKneeToHipFront,MinKneeToHipFront,MaxKneeToHipFront,RMSAnkleToKnee,MinAnkleToKnee,MaxAnkleToKnee,...
-% %     RMSWristToAnkle,MinWristToAnkle,MaxWristToAnkle,RMSElbowToKnee,MinElbowToKnee,MaxElbowToKnee,RMSShoulderToHip,MinShoulderToHip,MaxShoulderToHip);
-% %         OutputTable.Properties.VariableNames(1:33) = {'RMSWristToElbow','MinWristToElbow','MaxWristToElbow','RMSElbowToShoulder','MinElbowToShoulder','MaxElbowToShoulder','RMSShoulderToTrunk','MinShoulderToTrunk','MaxShoulderToTrunk'...
-% %             'RMSHipToTrunk','MinHipToTrunk','MaxHipToTrunk','RMSHipToTrunkFront','MinHipToTrunkFront','MaxHipToTrunkFront','RMSKneeToHip','MinKneeToHip','MaxKneeToHip','RMSKneeToHipFront','MinKneeToHipFront','MaxKneeToHipFront'...
-% %             'RMSAnkleToKnee','MinAnkleToKnee','MaxAnkleToKnee','RMSWristToAnkle','MinWristToAnkle','MaxWristToAnkle','RMSElbowToKnee','MinElbowToKnee','MaxElbowToKnee','RMSShoulderToHip','MinShoulderToHip','MaxShoulderToHip'};
-% %             TableName = strcat(TrialName,OutputExt);
-% %                 writetable(OutputTable,TableName)
-% % close all;
+%% Calculate Discrete Variables for Analyses
+% Intralimb Coordination
+% Wrist to Elbow
+RMSWristToElbow = rms(RelPhAngWristToElbow);
+MinWristToElbow = min(RelPhAngWristToElbow);
+MaxWristToElbow = max(RelPhAngWristToElbow);
+% Elbow to Shoulder
+RMSElbowToShoulder = rms(RelPhAngElbowToShoulder);
+MinElbowToShoulder = min(RelPhAngElbowToShoulder);
+MaxElbowToShoulder = max(RelPhAngElbowToShoulder);
+% Shoulder to Trunk
+RMSShoulderToTrunk = rms(RelPhAngShoulderToTrunk);
+MinShoulderToTrunk = min(RelPhAngShoulderToTrunk);
+MaxShoulderToTrunk = max(RelPhAngShoulderToTrunk);
+% Hip to Trunk
+RMSHipToTrunk = rms(RelPhAngHipToTrunk);
+MinHipToTrunk = min(RelPhAngHipToTrunk);
+MaxHipToTrunk = max(RelPhAngHipToTrunk);
+% Hip to Trunk Frontal Plane
+RMSHipToTrunkFront = rms(RelPhAngHipToTrunkFront);
+MinHipToTrunkFront = min(RelPhAngHipToTrunkFront);
+MaxHipToTrunkFront = max(RelPhAngHipToTrunkFront);
+% Knee to Hip
+RMSKneeToHip = rms(RelPhAngKneeToHip);
+MinKneeToHip = min(RelPhAngKneeToHip);
+MaxKneeToHip = max(RelPhAngKneeToHip);
+% Knee to Hip Frontal Plane
+RMSKneeToHipFront = rms(RelPhAngKneeToHipFront);
+MinKneeToHipFront = min(RelPhAngKneeToHipFront);
+MaxKneeToHipFront = max(RelPhAngKneeToHipFront);
+% Ankle to Knee
+RMSAnkleToKnee = rms(RelPhAngAnkleToKnee);
+MinAnkleToKnee = min(RelPhAngAnkleToKnee);
+MaxAnkleToKnee = max(RelPhAngAnkleToKnee);
+%Interlimb Coordination
+% Wrist to Ankle
+RMSWristToAnkle = rms(RelPhAngWristToAnkle);
+MinWristToAnkle = min(RelPhAngWristToAnkle);
+MaxWristToAnkle = max(RelPhAngWristToAnkle);
+% Elbow to Knee
+RMSElbowToKnee = rms(RelPhAngElbowToKnee);
+MinElbowToKnee = min(RelPhAngElbowToKnee);
+MaxElbowToKnee = max(RelPhAngElbowToKnee);
+% Shoulder to Hip
+RMSShoulderToHip = rms(RelPhAngShoulderToHip);
+MinShoulderToHip = min(RelPhAngShoulderToHip);
+MaxShoulderToHip = max(RelPhAngShoulderToHip);
+%% Output Table and File
+OutputTable = table(RMSWristToElbow,MinWristToElbow,MaxWristToElbow,RMSElbowToShoulder,MinElbowToShoulder,MaxElbowToShoulder,RMSShoulderToTrunk,MinShoulderToTrunk,MaxShoulderToTrunk,RMSHipToTrunk,MinHipToTrunk,MaxHipToTrunk,...
+    RMSHipToTrunkFront,MinHipToTrunkFront,MaxHipToTrunkFront,RMSKneeToHip,MinKneeToHip,MaxKneeToHip,RMSKneeToHipFront,MinKneeToHipFront,MaxKneeToHipFront,RMSAnkleToKnee,MinAnkleToKnee,MaxAnkleToKnee,...
+    RMSWristToAnkle,MinWristToAnkle,MaxWristToAnkle,RMSElbowToKnee,MinElbowToKnee,MaxElbowToKnee,RMSShoulderToHip,MinShoulderToHip,MaxShoulderToHip);
+        OutputTable.Properties.VariableNames(1:33) = {'RMSWristToElbow','MinWristToElbow','MaxWristToElbow','RMSElbowToShoulder','MinElbowToShoulder','MaxElbowToShoulder','RMSShoulderToTrunk','MinShoulderToTrunk','MaxShoulderToTrunk'...
+            'RMSHipToTrunk','MinHipToTrunk','MaxHipToTrunk','RMSHipToTrunkFront','MinHipToTrunkFront','MaxHipToTrunkFront','RMSKneeToHip','MinKneeToHip','MaxKneeToHip','RMSKneeToHipFront','MinKneeToHipFront','MaxKneeToHipFront'...
+            'RMSAnkleToKnee','MinAnkleToKnee','MaxAnkleToKnee','RMSWristToAnkle','MinWristToAnkle','MaxWristToAnkle','RMSElbowToKnee','MinElbowToKnee','MaxElbowToKnee','RMSShoulderToHip','MinShoulderToHip','MaxShoulderToHip'};
+            TableName = strcat(TrialName,OutputExt);
+                writetable(OutputTable,TableName)
+close all;
 
